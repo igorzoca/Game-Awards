@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tabela</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>The game Awards</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">início</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">início</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-vote">
+        <h2>Bem vindo à página de votação!</h2>
+        <div id="formulario-tabela">
+            <form name="form-voto">
+                <label for="nome">nome</label>
+                <input type="text" name="nome" >
+                <label for="sobrenome">sobrenome</label>
+                <input type="text" name="sobrenome" >
+                <label for="email">e-mail</label>
+                <input type="email" name="email" >
+
+                <label for="voto">Escolha sua opção:</label><br>
+                <select name="voto" id="voto">
+                    <option disabled selected value="escolha uma opção">escolha uma opção:</option>
+                    <option value="Alan wake 2">alan wake 2</option>
+                    <option value="super mario wonder">super mario wonder</option>
+                    <option value="baldur's gate">baldur's gate</option>
+                    <option value="spider man 2">marvel spider man 2</option>
+                    <option value="resident evil 4">resident evil 4 remastered</option>
+                    <option value="legend of zelda">legend of zelda: tears of the kingdom</option>
+                </select>
+                <input type="submit" value="enviar" onclick="cad_pessoa(nome.value, sobrenome.value, email.value)">
+            </form>
+        </div>
+        <br>
+        <div id="div-tabela">
+            <table id="tabela" border="1">
+                <thead>
+                    <tr>
+                        <td>codigo</td>
+                        <td>nome</td>
+                        <td>sobrenome</td>
+                        <td>e-mail</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="feedback">
+            <h2>Nos dê seu feedback!</h2>
+            <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="digite aqui seu feedback"></textarea>
+        </div>
+
+    </main>
+
+    <footer>
+        nos siga nas redes sociais: 
+        <a href="/">instagram</a>
+        <a href="/">facebook</a>
+        <a href="/">discord</a> <br>
+        <em>criado por Igor santos</em>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

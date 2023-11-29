@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Entrar</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>The game Awards</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">início</a></li>
+                    <li class="nav-item"><a href="tabela.html" class="nav-link">Tabela</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">início</a></li>
+                <li class="nav-item"><a href="tabela.html" class="nav-link">Tabela</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <main class="main-login">
+        <form class="form" > 
+            <h2>Login</h2>
+            <label class="label" for="nome">Seu nome</label>
+            <input type="text" placeholder="nome" name="" id="nome">
+
+            <label class="label" for="email">E-mail</label>
+            <input type="email" placeholder="email" name="" id="email">
+
+            <label class="label" for="senha">senha</label>
+            <input type="password" placeholder="senha" id="senha">
+
+            <input class="submit" type="submit" value="enviar" id="submit" onclick="login(); return false">
+        </form>
+    </main>
+
+    <footer>
+        nos siga nas redes sociais: 
+        <a href="/">instagram</a>
+        <a href="/">facebook</a>
+        <a href="/">discord</a> <br>
+        <em>criado por Igor santos</em>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
